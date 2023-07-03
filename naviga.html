@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+	<!-- Google Font -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+	<!-------->
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+
+		.navMenu {
+			font-family: 'Oswald', sans-serif;
+			padding: 8px;
+			text-align: center;
+			margin: 7px auto;
+			width: fit-content;
+		}
+
+		.navMenu a {
+			color: #40513B;
+			text-decoration: none;
+			text-transform: uppercase;
+			display: inline-block;
+			padding: 6px;
+		}
+
+		.background {
+			background-color: #EDF1D6
+		}
+
+		.border {
+			border: 2px solid #9DC08B;
+
+		}
+
+		.navMenu a:hover {
+
+			color: #609966;
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav class="navMenu  border background">
+		<a id="home" onclick="navigate(https://www.notion.so/Home-acecec4decce47d1a950698a58822c2d)" href="#"> <i class="fa-solid fa-house"></i> Home</a>
+		<a id="tasks" onclick="navigate)(https://www.notion.so/Tasks-13e8473836ae4e0eb0bb382792e85b45)" href="#"> <i class="fa-solid fa-bars-progress" style="color: #000000;"></i> Tasks</a>
+		<a id="school" onclick="navigate(https://www.notion.so/School-15ee96ea6ebb44a7b8bf4073edda11ec)" href="#"> <i class="fa-solid fa-school-flag" style="color: #000000;"></i> School</a>
+		<a id="exam" onclick="navigate(https://www.notion.so/Exam-486c53301ca548e3968773b08818323f)" href="#"> <i class="fa-solid fa-face-tired" style="color: #000000;"></i> Exam</a>
+		<a id="mood" onclick="navigate(https://www.notion.so/Mood-tracker-405bd20781cd48d79c19d8a1468a38c8)" href="#"> <i class="fa-solid fa-face-sad-cry" style="color: #000000;"></i> Mood</a>
+		<a id="habit" onclick="navigate(https://www.notion.so/Habit-Tracker-a062be63952d40e68aaa23ccaa6b3456)" href="#"> <i class="fa-solid fa-mobile-screen" style="color: #000000;"></i> Habit </a>
+
+
+
+
+
+		
+
+
+
+		
+
+
+
+
+
+	</nav>
+
+
+	<script>
+
+		let direction = "horizontal";
+		if (direction === "vertical") {
+			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
+		}
+
+
+		function navigate(id) {
+			if (id == 'home')
+				window.open("https://www.notion.so/Home-acecec4decce47d1a950698a58822c2d", '_parent').focus();
+			else if (id == 'tasks')
+				window.open("https://www.notion.so/Tasks-13e8473836ae4e0eb0bb382792e85b45)", '_parent').focus();
+			else if (id == 'school')
+				window.open("https://www.notion.so/School-15ee96ea6ebb44a7b8bf4073edda11ec", '_parent').focus();
+			else if (id == 'exam')
+				window.open("https://www.notion.so/Exam-486c53301ca548e3968773b08818323f", '_parent').focus();
+			else if (id == 'mood')
+				window.open("https://www.notion.so/Mood-tracker-405bd20781cd48d79c19d8a1468a38c8", '_parent').focus();
+			else if (id == 'habit')
+				window.open("https://www.notion.so/Habit-Tracker-a062be63952d40e68aaa23ccaa6b3456", '_parent').focus();
+		}
+	</script>
+
+
+</body>
+
+</html>
